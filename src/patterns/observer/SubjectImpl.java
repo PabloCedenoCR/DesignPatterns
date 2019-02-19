@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class SubjectImplementation implements Subject {
+public class SubjectImpl implements Subject {
 
   private int state;
   private List<Observer> observers;
 
-  public SubjectImplementation() {
+  public SubjectImpl() {
     observers = new ArrayList<>();
     state = 0;
     Timer timer = new Timer();

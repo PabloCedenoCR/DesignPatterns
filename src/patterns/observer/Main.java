@@ -3,11 +3,11 @@ package patterns.observer;
 public class Main {
 
   public static void main(String[] args) throws InterruptedException {
-    Observer observer1 = new ObserverImplementation();
-    Observer observer2 = new ObserverImplementation();
-    Observer observer3 = new ObserverImplementation();
+    Observer observer1 = new ObserverImpl();
+    Observer observer2 = new ObserverImpl();
+    Observer observer3 = new ObserverImpl();
 
-    Subject subject = new SubjectImplementation();
+    Subject subject = new SubjectImpl();
     subject.registerObserver(observer1);
     subject.registerObserver(observer2);
     subject.registerObserver(observer3);
